@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Product</title>
+</head>
+<body>
+    <h1>Create Product</h1>
+    <h2>Product form</h2>
+    <form action="/create-product" method="POST">
+        <label for="Product Name">Product Name:</label>
+        <input type="text" id="Product Name" name="Product Name" required>
+        <br><br>
+        <p>Category</p>
+        <select name="Category" id="Category" required>
+            <option value="Electronics">Electronics</option>
+            <option value="Clothing">Clothing</option>
+            <option value="Books">Books</option>
+            <option value="Home Appliances">Home Appliances</option>
+        </select>
+        <br><br>
+        <p>Product Freshness:</p>
+        <input type="radio" id="new" name="Product Freshness" value="new" required>  
+        <label for="new">New</label><br>
+        <input type="radio" id="refurbished" name="Product Freshness" value="refurbished" required>
+        <label for="refurbished">Refurbished</label><br>
+        <input type="radio" id="used" name="Product Freshness" value="used" required>
+        <label for="used">Used</label><br><br>
+        <p>image product <input type="file" </p>
+        <br><br>
+        <label for="Additional Description">Additional Description:</label><br>
+        <textarea id="Additional Description" name="Additional Description" rows="4" cols="
+50" required></textarea>
+        <br><br>
+        <label for="Product Price">Product Price:</label>
+        <input type="number" id="Product Price" name="Product Price" required>
+        <br><br>
+        
+        <button type="submit">Create Product</button>
+
+    </form>
+</body>
+</html>
