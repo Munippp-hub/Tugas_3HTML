@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create account</title>
+</head>
+<body>
+    <h1>Create account</h1>
+    <h2>Detail form</h2>
+    <form action="/create-account" method="POST">
+        <label for="First Name">First Name:</label>
+        <input type="text" id="First Name" name="First Name" required>
+        <br><br>
+        <label for="Last Name">Last Name:</label>
+        <input type="text" id="Last Name" name="Last Name" required>
+        <br><br>
+        <label for="Username">Username:</label>
+        <input type="text" id="Username" name="Username" required>
+        <br><br>
+        <p>Gender</p>
+        <input type="radio" id="male" name="Gender" value="male" required>  
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name=" Gender" value="female" required>
+        <label for="female">Female</label><br>
+        <input type="radio" id="other" name="Gender" value="other" required>
+        <label for="other">Other</label><br><br>
+        <label for="Address">Address:</label>
+        <input type="text" id="Address" name="Address" required>
+        <br><br>
+        <label for="Address2">Address2:</label>
+        <input type="text" id="Address2" name="Address2" required>
+        <br><br>
+        <p>Nasionality:</p>
+        <select name="Nasionality" id="Nasionality" required>
+            <option value="Indonesian">Indonesian</option>
+            <option value="Malaysian">Malaysian</option>
+            <option value="Singaporean">Singaporean</option>
+            <option value="Australian">Australian</option>
+        </select>
+        <br><br>
+        <p>Language Spoken:</p>
+        <input type="checkbox" id="Bahasa Indonesia" name="Language Spoken" value="Bahasa Indonesia">
+        <label for="Bahasa Indonesia"> Bahasa Indonesia</label><br>
+        <input type="checkbox" id="English" name="Language Spoken" value="English">
+        <label for="English"> English</label><br>
+        <input type="checkbox" id="Other" name="Language Spoken" value="Other">
+        <label for="Other"> Other</label><br><br>
+
+        <button type="submit">Create Account</button>
+    </form>
+</body>
+</html>
